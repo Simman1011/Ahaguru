@@ -3160,7 +3160,7 @@ iframe {
   display: block;
   width: 70px;
   height: 70px;
-  background: rgba(25, 107, 230, 0.800);
+  background: rgba(25, 107, 230, 0.7);
   border-radius: 50%;
   -webkit-animation: pulse-border 1500ms ease-out infinite;
   animation: pulse-border 1500ms ease-out infinite;
@@ -3176,9 +3176,9 @@ iframe {
   display: block;
   width: 50px;
   height: 50px;
-  background: rgba(25, 107, 230, 0.800);
+  background: rgba(25, 107, 230, 0.7);
   border-radius: 50%;
-  font-size: 34px;
+  font-size: 38px;
   color: white;
 }
 
