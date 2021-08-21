@@ -76,6 +76,9 @@ $(document).ready(function () {
     $('span.pause-video').click(function () {
         $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
     });
+    $('#myModal').click(function () {
+        $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+    });
 });
 
 
@@ -85,13 +88,16 @@ $(document).ready(function () {
     $('.iframeModal .close.pause-video').click(function () {
         $('.youtube-video').stopVideo();
     });
+    $('#myModal .close.pause-video').click(function () {
+        $('.youtube-video').stopVideo();
+    });
 })
 
 
 /* Thanks Popup Meg */
-$(document).ready(function (){
-    $('span.close-icon, .thanks-container, .close-btn').click(function(){
-        $('#thanks-meg').css('display','block');
+$(document).ready(function () {
+    $('span.close-icon, .thanks-container, .close-btn').click(function () {
+        $('#thanks-meg').css('display', 'block');
     });
 });
 
@@ -143,7 +149,7 @@ function buyFun_IIT_M() {
         priceTextIIT.innerHTML = priceIIT[2];
         buyBtn1IIT.href = links_IIT[2];
         buyBtn2IIT.href = links_IIT[2];
-    }else if (button1YearIIT_M.checked) {
+    } else if (button1YearIIT_M.checked) {
         priceTextIIT.innerHTML = priceIIT[3];
         buyBtn1IIT.href = links_IIT[3];
         buyBtn2IIT.href = links_IIT[3];
@@ -156,7 +162,7 @@ function buyFun_IIT_D() {
         buyBtn_IIT_D.href = links_IIT[1];
     } else if (button6MonthIIT_D.checked) {
         buyBtn_IIT_D.href = links_IIT[2];
-    }else if (button1YearIIT_D.checked) {
+    } else if (button1YearIIT_D.checked) {
         buyBtn_IIT_D.href = links_IIT[3];
     }
 }
@@ -208,7 +214,7 @@ function buyFun_NEET_M() {
         priceTextNEET.innerHTML = priceNEET[2];
         buyBtn1NEET.href = links_NEET[2];
         buyBtn2NEET.href = links_NEET[2];
-    }else if (button1YearNEET_M.checked) {
+    } else if (button1YearNEET_M.checked) {
         priceTextNEET.innerHTML = priceNEET[3];
         buyBtn1NEET.href = links_NEET[3];
         buyBtn2NEET.href = links_NEET[3];
@@ -221,7 +227,7 @@ function buyFun_NEET_D() {
         buyBtn_NEET_D.href = links_NEET[1];
     } else if (button6MonthNEET_D.checked) {
         buyBtn_NEET_D.href = links_NEET[2];
-    }else if (button1YearNEET_D.checked) {
+    } else if (button1YearNEET_D.checked) {
         buyBtn_NEET_D.href = links_NEET[3];
     }
 }

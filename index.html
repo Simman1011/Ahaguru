@@ -87,77 +87,97 @@
     <!-- microsoft clarity-->
 
     <style>
-        
         /* The Modal (background) */
         .modal {
-          display: none; /* Hidden by default */
-          position: fixed; /* Stay in place */
-          z-index: 1; /* Sit on top */
-          padding-top: 100px; /* Location of the box */
-          left: 0;
-          top: 0;
-          width: 100%; /* Full width */
-          height: 100%; /* Full height */
-          overflow: auto; /* Enable scroll if needed */
-          background-color: rgb(0,0,0); /* Fallback color */
-          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 100;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100vh;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            /* background-color: rgba(0, 0, 0, 0.4); */
+            /* Black w/ opacity */
         }
-        
+
         /* Modal Content */
         .modal-content {
-          position: relative;
-          background-color: #000;
-          margin: auto;
-          padding: 0;
-          border: 1px solid #888;
-          width: 100%;
-          height: 300px;
-          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-          -webkit-animation-name: animatetop;
-          -webkit-animation-duration: 0.4s;
-          animation-name: animatetop;
-          animation-duration: 0.4s
+            position: relative;
+            background-color: #000;
+            margin: auto;
+            padding: 0;
+            /* border: 1px solid #888; */
+            width: 100%;
+            height: 300px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
         }
-        
+
         /* Add Animation */
         @-webkit-keyframes animatetop {
-          from {top:-300px; opacity:0} 
-          to {top:0; opacity:1}
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
         }
-        
+
         @keyframes animatetop {
-          from {top:-300px; opacity:0}
-          to {top:0; opacity:1}
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
         }
-        
+
         /* The Close Button */
         .close {
-          color: white;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
         }
-        
+
         .close:hover,
         .close:focus {
-          color: #000;
-          text-decoration: none;
-          cursor: pointer;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
         }
-        
-        .modal-header {
-          padding: 2px 16px;
-          background-color: transparent;
-          color: white;
-        }
-    
 
-        </style>
-        
+        .modal-header {
+            padding: 2px 16px;
+            background-color: transparent;
+            color: white;
+        }
+    </style>
+
 </head>
 
 <body>
-    
+
     <header>
         <div class="hide-desk">
             <ul class="nav-menu-mobile">
@@ -197,7 +217,7 @@
             </div>
             <div class="header-video">
                 <button id="myBtn">
-                    <picture  id="enquire-form">
+                    <picture id="enquire-form">
                         <source media="(min-width: )" srcset="" sizes="">
                         <source media="(min-width: )" srcset="" sizes="">
                         <img src="mfd/assets/img/balaji_placeholder.png" alt="rectangle" height="200" width="100%">
@@ -219,30 +239,42 @@
             </div>
         </div>
     </section>
-    <div id="myModal" class="modal">
 
-        <!-- Modal content -->
+    <div id="myModal" class="modal iframemodal">
         <div class="modal-content">
-          <div class="modal-header">
-            <span class="close pause-video">&times;</span>
-            <h2>&nbsp;</h2>
-          </div>
-          <div class="modal-body" style="height: 100%;">
-            <iframe style="height: 100%;" class="youtube-video"
-            src="https://www.youtube.com/embed/jfllcIu-704?enablejsapi=1&version=3&playerapiid=ytplayer&rel=0"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-          </div>
+            <div class="modal-header">
+                <span class="close pause-video">&times;</span>
+                <h2>&nbsp;</h2>
+            </div>
+            <div class="modal-body" style="height: 100%;">
+                <iframe style="height: 100%;" class="youtube-video"
+                    src="https://www.youtube.com/embed/jfllcIu-704?enablejsapi=1&version=3&playerapiid=ytplayer&rel=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
         </div>
-      
-      </div>
+    </div>
 
     <section class="form-sec" id="enquire-form">
         <h3>Book a call with</h3>
         <h3>our counselor</h3>
 
 
-        <div data-paperform-id="ahaguru"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script><div data-paperform-id="ahaguru"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
+        <div data-paperform-id="ahaguru"></div>
+        <script>
+            (function () {
+                var script = document.createElement('script');
+                script.src = "https://paperform.co/__embed.min.js";
+                document.body.appendChild(script);
+            })()
+        </script>
+        <script>
+            (function () {
+                var script = document.createElement('script');
+                script.src = "https://paperform.co/__embed.min.js";
+                document.body.appendChild(script);
+            })()
+        </script>
     </section>
 
 
@@ -250,48 +282,51 @@
         <div class="title">Choose your plan</div>
         <div class="three_col_grid">
             <div class="box">
-                <img src="mfd/assets/img/lab_stu.png" alt="lab_stu" width="85%" style="right: -55px; bottom: -60px;">
+                <img src="mfd/assets/img/lab_stu.png" alt="lab_stu" width="85%" style="right: -65px; bottom: -60px;">
                 <h4>LIVE Online Classes</h4>
-                <p>Live Interactive Class by the Top Expert</p>
-                <p>Teachers at the scheduled every week.</p>
+                <p>Live and Interactive classes by Expert Teachers.</p>
+                <p>Learn from the comfort of your home.</p>
                 <ul>
+                    <li>Live classes</li>
                     <li>Printed Workbooks & Study Materials</li>
-                    <li>Concept Video Lectures</li>
-                    <li>Solved Video Examples</li>
+                    <li>Concept Videos & solved examples</li>
+                    <li>Personal mentor to guide you and <br> clear your doubts</li>
                 </ul>
 
                 <p class="para">Time Required</p>
-                <p class="para">8 hrs/week for each subject</p>
+                <p class="para">8 hr per week for each subject</p>
                 <a href="#enquire-form" class="btn initiate-payment">ENQUIRE NOW</a>
             </div>
             <div class="box">
-                <img src="mfd/assets/img/Mentored_Learning_edited.png" alt="lab_stu" width="50%" style="right: 0px; bottom: -10px;">
-                <h4>Mentored Learning</h4>
-                <p>Live Interactive Class by the Top Expert</p>
-                <p>Teachers at the scheduled every week.</p>
+                <img src="mfd/assets/img/Mentored_Learning_edited.png" alt="lab_stu" width="50%"
+                    style="right: 0px; bottom: -10px;">
+                <h4>Mentored Learning Program</h4>
+                <p>You get access to our recorded sessions by expert Teachers and mentors to help you with study planner
+                    and clearing doubts.</p>
                 <ul>
                     <li>Printed Workbooks & Study Materials</li>
-                    <li>Concept Video Lectures</li>
-                    <li>Solved Video Examples</li>
+                    <li>Recorded classes</li>
+                    <li>Concept Videos & solved examples </li>
+                    <li>Personal mentor to guide you and <br> clear your doubts</li>
                 </ul>
 
-                <p  class="para">Time Required</p>
-                <p  class="para">8 hrs/week for each subject</p>
+                <p class="para">Time Required</p>
+                <p class="para">6 hr per week for each subject</p>
                 <a href="#enquire-form" class="btn initiate-payment">ENQUIRE NOW</a>
             </div>
             <div class="box">
-                <img src="mfd/assets/img/third_block_self_study.png" alt="lab_stu" width="67%" style="right: 0px; bottom: -50px;">
+                <img src="mfd/assets/img/third_block_self_study.png" alt="lab_stu" width="67%"
+                    style="right: 0px; bottom: -50px;">
                 <h4>Self Study Course</h4>
-                <p>Live Interactive Class by the Top Expert</p>
-                <p>Teachers at the scheduled every week.</p>
+                <p>Online video lessons for all topics. Learn any topic, anytime at your pace and convenience.</p>
                 <ul>
-                    <li>Printed Workbooks & Study Materials</li>
                     <li>Concept Video Lectures</li>
                     <li>Solved Video Examples</li>
+                    <li>Practice questions</li>
                 </ul>
 
-                <p  class="para">Time Required</p>
-                <p  class="para">8 hrs/week for each subject</p>
+                <p class="para">Time Required</p>
+                <p class="para">4 hr per week for each subject</p>
                 <a href="#enquire-form" class="btn initiate-payment">ENQUIRE NOW</a>
             </div>
         </div>
@@ -327,7 +362,7 @@
         <div class="title">Best Teachers</div>
 
         <div class="cards">
-            <button>
+            <button class="teacher-btn" id="balaji-btn">
                 <div class="card">
                     <div class="teacher-img">
                         <img src="mfd/assets/img/tech1.png" alt="teach" width="100%">
@@ -335,12 +370,12 @@
                     <div class="teacher-info">
                         <div class="teacher-name">Balaji Sampath</div>
                         <div class="teacher-rank">All India Rank 4 in IIT JEE 1990</div>
-                        <div class="teacher-para">Experience of 10 years in teaching</div> 
+                        <div class="teacher-para">Experience of 10 years in teaching</div>
                     </div>
                 </div>
             </button>
 
-            <button>
+            <button class="teacher-btn" id="ksbalaji-btn">
                 <div class="card">
                     <div class="teacher-img">
                         <img src="mfd/assets/img/ksbalaji.png" alt="teach" width="100%">
@@ -348,12 +383,12 @@
                     <div class="teacher-info">
                         <div class="teacher-name">Prof. K. S. Balaji</div>
                         <div class="teacher-rank">Physics</div>
-                        <div class="teacher-para">Experience of 10 years in teaching</div> 
+                        <div class="teacher-para">Experience of 10 years in teaching</div>
                     </div>
                 </div>
             </button>
 
-            <button>
+            <button class="teacher-btn" id="evvie-btn">
                 <div class="card">
                     <div class="teacher-img">
                         <img src="mfd/assets/img/evve.png" alt="teach" width="100%">
@@ -361,12 +396,12 @@
                     <div class="teacher-info">
                         <div class="teacher-name">Prof. Evvie Chockalingam</div>
                         <div class="teacher-rank">Chemistry</div>
-                        <div class="teacher-para">Experience of 10 years in teaching</div> 
+                        <div class="teacher-para">Experience of 10 years in teaching</div>
                     </div>
                 </div>
             </button>
 
-            <button>
+            <button class="teacher-btn" id="paul-btn">
                 <div class="card">
                     <div class="teacher-img">
                         <img src="mfd/assets/img/paul.png" alt="teach" width="100%">
@@ -374,11 +409,38 @@
                     <div class="teacher-info">
                         <div class="teacher-name">Prof. Paul Vinotha Rajan</div>
                         <div class="teacher-rank">Biology</div>
-                        <div class="teacher-para">Experience of 10 years in teaching</div> 
+                        <div class="teacher-para">Experience of 10 years in teaching</div>
                     </div>
                 </div>
             </button>
         </div>
+
+        <div class="teacher-details-container">
+            <div class="teacher-details-card">
+                <p><span class="teacher-card-close">&times;</span></p>
+                <div class="teacher-card-img">
+                    <img src="mfd/assets/img/tech1.png" width="100" height="100" id="teacherCardImg">
+                </div>
+                <p id="teacherCardText"><b>Dr. Balaji Sampath</b>, got his B.Tech from IIT Madras and PhD from the
+                    University of
+                    Maryland.
+                    Balaji’s Physics and Math classes focus on conceptual clarity, practical experiments and
+                    innovative
+                    problem solving techniques. He has helped thousands of students get into IITs, NITs and BITS.
+                    Lots
+                    of students have reported ‘falling in love with Physics’ because of Balaji’s classes. His
+                    popular
+                    science demos on Sun TV, his books, videos and teaching methods have inspired lakhs of students.
+                    He
+                    also
+                    founded AID INDIA and Disha Foundation, non-profit initiatives that have educated over a million
+                    children. For
+                    innovation in Science education, Balaji was awarded Ashoka Fellowship, Lemelson Inventor
+                    Certificate, University of Maryland International Alumnus Award and the IIT Madras Distinguished
+                    Alumnus Award.</p>
+            </div>
+        </div>
+
 
         <!-- <div class="link-button" id='viewMore'>
             <button class="view_more">See All Mentors</button>
@@ -428,42 +490,42 @@
                         solutions.
                     </p>
                 </li>
-            </ul>  
+            </ul>
         </div>
-          
+
         <div id="Paris" class="tabcontent">
-        <ul class="accordian">
-            <li class="accordian-list">
-                <input type="checkbox" checked="" />
-                <i></i>
-                <h2>Physics</h2>
-                <p>This cours in CBSE as well as in ICSE</p>
-            </li>
-            <li class="accordian-list">
-                <input type="checkbox" checked="" />
-                <i></i>
-                <h2>Chemistry</h2>
-                <p>
-                    performance of your child, in this section.
-                </p>
-            </li>
-            <li class="accordian-list">
-                <input type="checkbox" checked="" />
-                <i></i>
-                <h2>Biology</h2>
-                <p>
-                    upgrade your course.</p>
-            </li>
-            <li class="accordian-list">
-                <input type="checkbox" checked="" />
-                <i></i>
-                <h2>Complete Foundation Course</h2>
-                <p> to access the video
-                    solutions.
-                </p>
-            </li>
-        </ul> 
-        </div>     
+            <ul class="accordian">
+                <li class="accordian-list">
+                    <input type="checkbox" checked="" />
+                    <i></i>
+                    <h2>Physics</h2>
+                    <p>This cours in CBSE as well as in ICSE</p>
+                </li>
+                <li class="accordian-list">
+                    <input type="checkbox" checked="" />
+                    <i></i>
+                    <h2>Chemistry</h2>
+                    <p>
+                        performance of your child, in this section.
+                    </p>
+                </li>
+                <li class="accordian-list">
+                    <input type="checkbox" checked="" />
+                    <i></i>
+                    <h2>Biology</h2>
+                    <p>
+                        upgrade your course.</p>
+                </li>
+                <li class="accordian-list">
+                    <input type="checkbox" checked="" />
+                    <i></i>
+                    <h2>Complete Foundation Course</h2>
+                    <p> to access the video
+                        solutions.
+                    </p>
+                </li>
+            </ul>
+        </div>
 
         <div class="enquire-now">
             <a href="#enquire-form" class="btn">Enquire Now</a>
@@ -504,19 +566,25 @@
         <div class="grid">
             <div class="grid-boxes">
                 <div class="imgs">
-                    <a href="https://www.fortuneindia.com/enterprise/knowledge-must-be-accessible-to-everybody-gomathi-shanmugam-co-founder-ahaguru/105525"><img src="mfd/assets/img/fortune.jpg" alt="fortune" width="100%"></a>
+                    <a
+                        href="https://www.fortuneindia.com/enterprise/knowledge-must-be-accessible-to-everybody-gomathi-shanmugam-co-founder-ahaguru/105525"><img
+                            src="mfd/assets/img/fortune.jpg" alt="fortune" width="100%"></a>
                 </div>
                 <div class="imgs">
-                    <a href="https://www.thehindubusinessline.com/"><img src="mfd/assets/img/bussiness.png" alt="bussiness" width="100%"></a>
+                    <a href="https://www.thehindubusinessline.com/"><img src="mfd/assets/img/bussiness.png"
+                            alt="bussiness" width="100%"></a>
                 </div>
                 <div class="imgs">
-                    <a href="https://www.mid-day.com/news/"><img src="mfd/assets/img/midday.jpg" alt="midday" width="100%"></a>
+                    <a href="https://www.mid-day.com/news/"><img src="mfd/assets/img/midday.jpg" alt="midday"
+                            width="100%"></a>
                 </div>
                 <div class="imgs">
-                    <a href="https://www.thehindu.com/"><img src="mfd/assets/img/thehindhu.jpg" alt="midday" width="100%"></a>
+                    <a href="https://www.thehindu.com/"><img src="mfd/assets/img/thehindhu.jpg" alt="midday"
+                            width="100%"></a>
                 </div>
                 <div class="imgs">
-                    <a href="https://yourstory.com/"><img src="mfd/assets/img/yourstory.png" alt="midday" width="100%"></a>
+                    <a href="https://yourstory.com/"><img src="mfd/assets/img/yourstory.png" alt="midday"
+                            width="100%"></a>
                 </div>
                 <div class="imgs">
                     <a href="#"><img src="mfd/assets/img/newtoday.png" alt="midday" width="100%"></a>
@@ -528,8 +596,10 @@
 
     <section class="bottom-chat">
         <div class="social">
-            <a href="tel:+9600100090" class="whatsapp_float" target="_blank"><i><img src="mfd/assets/img/Call_icon_tiny.png" alt="call_icon" width="18"></i> GET A CALLBACK</a>
-            <a href="https://wa.me/919600100027" class="whatsapp_float" target="_blank"><i><img src="mfd/assets/img/whatsapp.svg" alt="whatappLink" width="18"></i> CHAT ON WHATSAPP</a>
+            <a href="tel:+9600100090" class="whatsapp_float" target="_blank"><i><img
+                        src="mfd/assets/img/Call_icon_tiny.png" alt="call_icon" width="18"></i> GET A CALLBACK</a>
+            <a href="https://wa.me/919600100027" class="whatsapp_float" target="_blank"><i><img
+                        src="mfd/assets/img/whatsapp.svg" alt="whatappLink" width="18"></i> CHAT ON WHATSAPP</a>
         </div>
     </section>
 
@@ -541,7 +611,7 @@
 
     <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="assets/js/constant.js"></script>
-
+    <script type="text/javascript" src="mfd/assets/js/mainscript.js"></script>
 
     <!-- Event snippet for Physics - Page view conversion page -->
     <script>
@@ -551,79 +621,137 @@
     </script>
 
 
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
-    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-<script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-    
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
     </script>
 
     <script>
-// Get the modal
-var modal = document.getElementById("myModal");
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
 
-// -----------------
-// Youtube Pause while slide to left or right
-// -----------------
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
 
-$(document).ready(function () {
-    $('span.pause-video').click(function () {
-        $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-    });
-});
-</script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // -----------------
+        // Youtube Pause while slide to left or right
+        // -----------------
+
+        $(document).ready(function () {
+            $('span.pause-video').click(function () {
+                $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' +
+                    'pauseVideo' + '","args":""}', '*');
+            });
+            $('#myModal').click(function () {
+                $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' +
+                    'pauseVideo' +
+                    '","args":""}', '*');
+            });
+        });
+
+        /* Pause video on bg */
+        $(document).ready(function () {
+            $('#myModal .close.pause-video').click(function () {
+                $('.youtube-video').stopVideo();
+            });
+        })
+
+
+
+        // Teacher Details popup
+
+        $(document).ready(function () {
+            $('.teacher-btn').click(function () {
+                $('.teacher-details-container').css('display', 'block');
+            });
+            $('span.teacher-card-close, .teacher-details-container').click(function () {
+                $('.teacher-details-container').css('display', 'none');
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('#balaji-btn').click(function () {
+                $('#teacherCardImg').attr('src', 'mfd/assets/img/tech1.png');
+                $('#teacherCardText').html(
+                    '<b>Dr. Balaji Sampath</b>, got his B.Tech from IIT Madras and PhD from the University of Maryland.Balaji’ s Physics and Math classes focus on conceptual clarity, practical experiments and innovative problem solving techniques. He has helped thousands of students get into IITs, NITs and BITS.Lots of students have reported‘ falling in love with Physics’ because of Balaji’ s classes.His popular science demos on Sun TV, his books, videos and teaching methods have inspired lakhs of students. He also founded AID INDIA and Disha Foundation, non -profit initiatives that have educated over a million children.For innovation in Science education, Balaji was awarded Ashoka Fellowship, Lemelson Inventor Certificate, University of Maryland International Alumnus Award and the IIT Madras Distinguished Alumnus Award.'
+                )
+            });
+
+            $('#ksbalaji-btn').click(function () {
+                $('#teacherCardImg').attr('src', 'mfd/assets/img/ksbalaji.png');
+                $('#teacherCardText').html(
+                    '<b>Prof. K. S. Balaji</b> graduated from IIT Kanpur and got his Ph D in Physics from the University of California. He taught at the University of California for 8years before returning to India to do research and teach Physics In his 30 Years of physics teaching experience, he has trained thousands of students for IIT and other competitive exams His IIT JEE Physics classes help students gain fresh perspective and understand concepts clearly.'
+                )
+            });
+
+            $('#evvie-btn').click(function () {
+                $('#teacherCardImg').attr('src', 'mfd/assets/img/evve.png');
+                $('#teacherCardText').html(
+                    '<b>Evvie Chockalingam</b> did her M.Sc Eng and Ph.D from IISc Banglore. She was teaching Chemistry for B.E students at Anna University for almost 4 years. She also worked as a scientist at CSIR Lab for 3 years. Over the Last ten years she has been teaching chemistry for Class 11 and Class 12 students who are aspiring for IIT JEE and NEET by following a conceptual teaching method.'
+                )
+            });
+
+            $('#paul-btn').click(function () {
+                $('#teacherCardImg').attr('src', 'mfd/assets/img/paul.png');
+                $('#teacherCardText').html(
+                    '<b>Prof. Paul Vinotha Rajan</b> (M.Sc., B.Ed) is an expert Biology teacher, who is passionate about developing interesting ways to teach concepts in Biology. He has helped hundreds of understand difficult concepts easily and top entrance examinations. He has vast experience in producing modules for e-learning modules in Biology at International Standards.'
+                )
+            });
+
+        });
+    </script>
 
 
 </body>
