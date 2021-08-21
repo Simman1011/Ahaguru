@@ -3158,9 +3158,9 @@ iframe {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   display: block;
-  width: 60px;
-  height: 60px;
-  background: #1a6ae5;
+  width: 70px;
+  height: 70px;
+  background: rgba(25, 107, 230, 0.800);
   border-radius: 50%;
   -webkit-animation: pulse-border 1500ms ease-out infinite;
   animation: pulse-border 1500ms ease-out infinite;
@@ -3176,7 +3176,7 @@ iframe {
   display: block;
   width: 50px;
   height: 50px;
-  background: #1a6ae5;
+  background: rgba(25, 107, 230, 0.800);
   border-radius: 50%;
   font-size: 44px;
   color: white;
@@ -3747,34 +3747,35 @@ html {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.74);
-  z-index: 1000;
+  z-index: 100;
   display: none;
 }
 
-.teacher-details-container .teacher-details-card {
-  position: absolute;
+.teacher-details-card {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
   background-color: #007afa;
-  z-index: 100;
   padding: 20px;
+  z-index: 1000;
+  display: none;
 }
 
-.teacher-details-container .teacher-details-card .teacher-card-img {
+.teacher-details-card .teacher-card-img {
   text-align: center;
   margin: 10px 0px;
 }
 
-.teacher-details-container .teacher-details-card #teacherCardText {
+.teacher-details-card #teacherCardText {
   font-size: 16px;
   color: #fff;
   text-align: justify;
 }
 
-.teacher-details-container .teacher-details-card p .teacher-card-close {
+.teacher-details-card p .teacher-card-close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -3782,4 +3783,66 @@ html {
   color: #fff;
   background-color: transparent;
   cursor: pointer;
+}
+
+
+/* text Animation */
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+
+.oc-text-ani1 {
+  -webkit-animation: fadeInUp 0.3s ease-out;
+  animation: fadeInUp 0.3s ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.oc-text-ani2 {
+  -webkit-animation: fadeInUp 0.3s ease-out;
+  animation: fadeInUp 0.3s ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 500ms;
+}
+
+.oc-text-ani3 {
+  -webkit-animation: fadeInUp 0.3s ease-out;
+  animation: fadeInUp 0.3s ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 1000ms;
+}
+
+.oc-text-ani4 {
+  -webkit-animation: fadeInUp 0.3s ease-out;
+  animation: fadeInUp 0.3s ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 1500ms;
 }
