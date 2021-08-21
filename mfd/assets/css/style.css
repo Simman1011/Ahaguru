@@ -3178,7 +3178,7 @@ iframe {
   height: 50px;
   background: rgba(25, 107, 230, 0.800);
   border-radius: 50%;
-  font-size: 44px;
+  font-size: 34px;
   color: white;
 }
 
@@ -3285,6 +3285,10 @@ iframe {
   z-index: 1;
 }
 
+.chooseyourplan .three_col_grid .box .box-text {
+  width: 74%;
+}
+
 .chooseyourplan .three_col_grid .box .para {
   font-size: 11px;
   font-weight: 500;
@@ -3303,6 +3307,7 @@ iframe {
   list-style-type: none;
   margin: 16px 0;
   position: relative;
+  width: 80%;
   z-index: 1;
 }
 
