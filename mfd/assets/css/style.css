@@ -3464,7 +3464,7 @@ iframe {
 
 .bestteachers .cards button .card .teacher-para {
   padding-bottom: 6px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   color: #747474;
 }
@@ -3530,9 +3530,9 @@ iframe {
 
 /* Style the buttons inside the tab */
 .flexiblestudy .tab button {
-  background-color: #1a6ae5;
-  color: #fff;
-  border: none;
+  background-color: transparent;
+  color: #1a6ae5;
+  border: 2px solid #1a6ae5;
   outline: none;
   cursor: pointer;
   padding: 12px 0;
@@ -3548,9 +3548,9 @@ iframe {
 
 /* Create an active/current tablink class */
 .flexiblestudy .tab button.active {
-  background-color: transparent;
+  background-color: #1a6ae5;
   border: 2px solid #1a6ae5;
-  color: #1a6ae5;
+  color: #fff;
 }
 
 /* Style the tab content */
@@ -3572,9 +3572,21 @@ iframe {
   color: red;
 }
 
+.flexiblestudy .accordian-list {
+  list-style: square;
+  padding: 0;
+  margin: 10px 30px;
+}
+
+.flexiblestudy .accordian-list .accordian-items {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(43, 43, 43);
+  padding: 10px 0px;
+}
 
 
-.flexiblestudy .accordian {
+/* .flexiblestudy .accordian {
   list-style: none;
   padding: 0;
   margin: 10px 0px;
@@ -3605,9 +3617,9 @@ iframe {
   position: absolute;
   -webkit-transform: translate(-17px, -9px);
   transform: translate(-17px, -9px);
-  /* margin-top: 16px; */
-  right: 0;
-  top: 28px;
+  // margin-top: 16px; 
+right: 0;
+top: 28px;
 }
 
 .flexiblestudy .accordian .accordian-list h2 {
@@ -3665,6 +3677,7 @@ iframe {
   text-align: left;
 }
 
+*/
 .flexiblestudy .enquire-now a {
   display: block;
   text-decoration: none;
@@ -3685,7 +3698,7 @@ iframe {
 /* We're Featured */
 
 .across_media {
-  padding: 50px 20px;
+  padding: 50px 20px 100px 20px;
   background-color: #e8edf3;
   position: relative;
   overflow: hidden;
@@ -3718,10 +3731,19 @@ iframe {
   align-items: center;
 }
 
+.bottom-chat {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  z-index: 100;
+}
 
 .bottom-chat .social {
   display: flex;
-
 }
 
 .bottom-chat .social a {
